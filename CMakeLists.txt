@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.5)
 project(qvtf)
 
 option(QT4VTF "Build for Qt4" ${QT4VTF})
-option(QT5VTF "Build for Qt5" ${QT5VTF})
+option(QT5VTF "Build for Qt5" ON) # Default to ON for now.
 
 # Don't use system paths, let us install locally!
 #set(KDE_INSTALL_USE_QT_SYS_PATHS FALSE)
