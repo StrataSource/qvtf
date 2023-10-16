@@ -443,7 +443,7 @@ bool ValveTextureFileHandler::read()  {
 
     QByteArray data = device()->readAll();
 
-    if (!vtf.Load((const vlVoid*)data.data(), (vlSize)data.size())) {
+    if (!vtf.Load((const vlVoid*)data.data(), data.size())) {
         qWarning("%s", VTFLib::LastError.Get());
         state = Error;
         return false;
